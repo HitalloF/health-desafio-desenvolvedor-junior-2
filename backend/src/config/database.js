@@ -1,7 +1,7 @@
 module.exports = {
     username: "postgres",
     password: "123",
-    database: "Petshop2Softdb",
+    database: "PetShopdb",
     host: "localhost",
     port: 5432,
     dialect: "postgres",
