@@ -1,6 +1,17 @@
 .ficha {
-    justify-content: space-around;
-    
+    justify-content:start;
+    flex-wrap: wrap;
     display: flex;
-    background: pink;
+}
+.boxEsquerdo h1{
+    font-size: 20px;
+    text-align: center;
+}
+.boxEsquerdo h2{
+    font-size: 20px;
+    margin-left: 15px;
+    
+}
+.boxEsquerdo {
+    border-left: 5px solid #FF4500;
 }

@@ -20,7 +20,7 @@ React.useEffect(()=>{
             
         
         <div className={styles.ficha}>
-            <div><h1>Nome: {dados.name}</h1>
+            <div className={styles.boxEsquerdo}><h1>Nome: {dados.name}</h1>
                 <div>
                     <h2>Idade: {dados.idade}</h2>
                     <h2>Raça: {dados.raca }</h2>
@@ -28,7 +28,7 @@ React.useEffect(()=>{
                 </div>
             </div>
             
-            <div><h1>Dono: {dados.dono_nome}</h1>
+            <div className={styles.boxEsquerdo}><h1>Dono: {dados.dono_nome}</h1>
                  <h2>Telefone:{dados.dono_telefone}</h2></div>
             <div>
         </div>

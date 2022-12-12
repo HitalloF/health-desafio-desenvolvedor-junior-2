@@ -6,6 +6,7 @@ import FichaId from "./componentes/FichaId";
 import Cadastrar from "./componentes/Cadastrar";
 
 
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,6 @@ function App() {
           <Route path='/fichas' element={<Fichas />} />
           <Route path='/cadastro' element={<Cadastrar />} />
           <Route path='/:id' element={<FichaId />} />
-
           <Route path='/' element={<Body />} />
         </Routes>
 

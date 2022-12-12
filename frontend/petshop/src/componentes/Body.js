@@ -1,9 +1,16 @@
 import React from 'react'
-import { Fichas } from './Fichas'
+
 
 const Body = () => {
   return (
-    <div>Body</div>
+    <div>
+
+
+    <h1>SISTEMA DE PETSHOP - CRUD EM SEQUELIZE</h1>
+        <p>Hitallo</p>
+
+
+    </div>
   )
 }
 
