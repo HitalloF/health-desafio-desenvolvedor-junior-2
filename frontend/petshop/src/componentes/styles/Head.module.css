@@ -1,0 +1,12 @@
+.nav ul {
+    display: flex;
+    justify-content:  start;
+}
+nav li {
+    padding: 1rem;
+}
+
+.nav li {
+    list-style: none;
+    color: white;
+}

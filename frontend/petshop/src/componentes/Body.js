@@ -1,8 +1,9 @@
 import React from 'react'
+import { Fichas } from './Fichas'
 
 const Body = () => {
   return (
-    <div>OLHA SOU BODY</div>
+    <div>Body</div>
   )
 }
 

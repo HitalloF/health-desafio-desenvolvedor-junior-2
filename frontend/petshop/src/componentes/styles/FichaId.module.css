@@ -1,0 +1,6 @@
+.ficha {
+    justify-content: space-around;
+    
+    display: flex;
+    background: pink;
+}

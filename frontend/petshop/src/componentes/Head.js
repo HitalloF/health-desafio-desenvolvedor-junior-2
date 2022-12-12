@@ -1,13 +1,13 @@
 import React from 'react'
-
+import styles from './styles/Head.module.css'
 const Head = () => {
   return (
     <>
-    <nav>
+    <nav className={styles.nav}>
       <ul>
-        <li>FICHAS</li>
-        <li>CADASTAR</li>
-        <li>BUSCAR</li>
+        <li><a href='/fichas'>FICHAS</a></li>
+        <li><a href='/cadastro'>CADASTRO</a></li>
+        <li><a href='/find'>PROCURAR PELO ID</a></li>
       </ul>
     </nav>
     

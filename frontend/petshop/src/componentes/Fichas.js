@@ -27,11 +27,14 @@ const [dados,setDados] = React.useState('');
 
 {dados &&
         dados.animais.map((p) => (
-          <a onClick={handleClick}
+          <div> <a onClick={handleClick}
           href={p.id}   >
+            
             <h2>{p.id}</h2>
             <h1>{p.name}</h1>
-          </a>
+          
+            </a></div>
+       
 
 ))}
     </section>
