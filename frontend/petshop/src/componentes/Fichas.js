@@ -11,16 +11,26 @@ const [dados,setDados] = React.useState('');
 
     console.log(setDados,dados)
 
+
+    function handleClick(event){
+      const id = event.target.innerText
+      window.localStorage.setItem('Id', id)
+      console.log(event.target.value)
+    }
+
+
   return (
+
     <section>
+
 
 
 {dados &&
         dados.animais.map((p) => (
-          <a
-          href={p.id}          
-          >
-            {p.name}
+          <a onClick={handleClick}
+          href={p.id}   >
+            <h2>{p.id}</h2>
+            <h1>{p.name}</h1>
           </a>
 
 ))}
