@@ -1,0 +1,41 @@
+.cadastro {
+    background: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cadastro input {
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: 	#FF4500;
+
+}
+.cadastro label{
+    font-weight: bold;
+    color: 	#FF4500;
+}
+
+.button button{
+    background-color: 	#FF4500;
+    font-weight: bold;
+}
+.button button:hover{
+    background-color: 	#FFA500;
+    font-weight: bold;
+}
+
+.button {
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+  
+}

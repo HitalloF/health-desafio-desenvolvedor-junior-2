@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from './styles/Cadastrar.module.css'
 import { useForm } from 'react-hook-form';
 
 
@@ -18,46 +18,46 @@ const Cadastrar = () => {
   }
 
 
-
-
-
-
-
-
   return (
-    <div>
+    <div className={styles.cadastro}>
+      
+    <div className={styles.form}>
+      
       <form onSubmit={handleSubmit(addPost)}>
-    <div>
-        <label>Nome</label>
+        
+    <div >
+      <h1>INFORMAÇÕES DO ANIMAL</h1>
+        <label>Nome:  </label>
         <input type='text' name="name" {...register("name")}/>
     </div>
-    <div>
-        <label>Idade</label>
+    <div className={styles.form}>
+        <label>Idade:</label>
         <input type='number' name="idade" {...register("idade")} />
     </div>
-    <div>
-        <label>Raça</label>
+    <div  className={styles.form}>
+        <label>Raça:</label>
         <input type='text' name="raca" {...register("raca")} />
     </div>
-    <div>
-        <label>Tipo</label>
+    <div  className={styles.form}>
+        <label>Tipo:</label>
         <input type='text' name="tipo" {...register("tipo")} />
     </div>
     <h1>INFORMAÇÕES DO CLIENTE</h1>
-    <div>
-        <label>Nome</label>
+    <div  className={styles.form}>
+        <label>Nome:</label>
         <input type='text' name="dono_nome" {...register("dono_nome")} />
     </div>
-    <div>
-        <label>Telefone</label>
+    <div  className={styles.form}>
+        <label>Telefone:</label>
         <input type='text' name="dono_telefone" {...register("dono_telefone")} />
     </div>
-    <div>
-      <button type='submit'>Submit</button>
+    <div className={styles.button}>
+      <button type='submit'>CADASTRAR</button>
     </div>
     </form>
 
 
+    </div>
     </div>
   )
 }

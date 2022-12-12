@@ -1,6 +1,6 @@
 import React from 'react'
-// import {  NavLink } from 'react-router-dom';
-
+import styles from './styles/Fichas.module.css'
+import 'bootstrap/dist/css/bootstrap.css';
 export const Fichas = () => {
 const [dados,setDados] = React.useState('');
 
@@ -21,19 +21,22 @@ const [dados,setDados] = React.useState('');
 
   return (
 
-    <section>
+    <section className={styles.fichas}>
 
 
 
 {dados &&
         dados.animais.map((p) => (
-          <div> <a onClick={handleClick}
-          href={p.id}   >
-            
-            <h2>{p.id}</h2>
-            <h1>{p.name}</h1>
           
-            </a></div>
+          <div className={styles.ficha}>
+            
+            <h1>Animal {p.tipo}:    {p.name}, </h1>
+            <h1> Cliente: {p.dono_nome}</h1>
+            
+            <a onClick={handleClick}
+          href={p.id} ><div className={styles.id}> <h2>{p.id}</h2></div>
+            </a>
+           </div>
        
 
 ))}
